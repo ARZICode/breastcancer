@@ -743,13 +743,46 @@ export default function App() {
         </section>
       </main>
 
+      {/* FOOTER */}
+     {/* FOOTER */}
       <footer className="site-footer">
         <div className="wrap foot-grid">
           <div>
             <p className="foot-brand">BEYOND THE RIBBON</p>
             <p className="foot-tag">Awareness today. Hope for tomorrow.</p>
             <p className="foot-credit">A digital awareness concept by ARZICode.lb.</p>
+            
+            {/* Social & Email Links with Icons */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
+              <a 
+                href="https://www.instagram.com/arzicode.lb" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+              >
+                {/* Instagram Icon */}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>@arzicode.lb</span>
+              </a>
+
+              <a 
+                href="mailto:arzicodelb@gmail.com"
+                style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+              >
+                {/* Email / Mail Icon */}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>arzicodelb@gmail.com</span>
+              </a>
+            </div>
           </div>
+
           <nav aria-label="Footer">
             <ul className="foot-nav">
               <li><a href="#signs">The Signs</a></li>
@@ -759,6 +792,7 @@ export default function App() {
               <li><a href="#action">Take Action</a></li>
             </ul>
           </nav>
+
           <div className="foot-legal">
             <p>
               <strong>Medical information disclaimer.</strong> This website is for general awareness only. It is not medical advice, does not diagnose or screen for any condition, and is not a substitute for a qualified healthcare professional. If you notice a change in your breasts or have concerns about your health, contact a healthcare professional.
