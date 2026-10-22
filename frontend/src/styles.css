@@ -23,7 +23,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background: var(--ivory);
   color: var(--ink);
   font: 400 1.0625rem/1.65 var(--sans);
